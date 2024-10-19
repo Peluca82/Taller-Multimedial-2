@@ -1,0 +1,644 @@
+@font-face {
+    font-family: "Bebas";
+    src: url("fuentes/BebasNeue/BebasNeue-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "RobotoRegular";
+    src: url("fuentes/RobotoCondensed/RobotoCondensed-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "RobotoBold";
+    src: url("fuentes/RobotoCondensed/RobotoCondensed-Bold.ttf");
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #191919;
+}
+
+/*------------------------------HEADER------------------------------*/
+
+.header {
+    background-color: #202020;
+}
+
+.logo {
+    margin-top: 25px;
+    margin-left: 50px;
+    position: absolute;
+    background-color: #D92B00;
+}
+
+.logo img{
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 125px;
+}
+
+.textos-header {
+    margin-left: 340px;
+    margin-right: 340px;
+    display: flex;
+    justify-content:space-around;
+    font-family: Bebas;
+    font-size: 1.5em;
+}
+
+.textos-header h2 {
+    color: white;
+    margin: 15px 0 15px 0;
+    font-size: 1.25em;
+}
+
+.textos-header img {
+    width: 22px;
+    height: 22px;
+    align-self: center;
+}
+
+.textos-header :hover {
+    color:#D92B00;
+}
+
+/*------------------------------PRIMERA NOTICIA------------------------------*/
+
+.primera-noticia {
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-pn {
+    filter: brightness(80%);
+}
+
+/*------------------------------BUSQUEDA RAPIDA------------------------------*/
+
+.busqueda-rapida {
+    display: relative;
+    margin-top: 100px;
+    background-color: #202020;
+    padding-bottom: 100px;
+}
+
+.titulo-busqueda {
+    position: absolute;
+    justify-content: center;
+    left: 43%;
+    top: 72%;
+}
+
+.titulo-busqueda h1 {
+    text-align: center;
+    font-family: Bebas;
+    color: white;
+    background-color: #111;
+    width: 250px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.secciones {
+    margin-top: 20px;
+    padding-top: 65px;
+}
+
+.secciones-lugar {
+    font-family: RobotoBold;
+    display: flex;
+    justify-content: center;
+}
+
+.secciones-lugar h2 {
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.secciones-epoca {
+    font-family: RobotoBold;
+    display: flex;
+    justify-content: center;
+}
+
+.secciones-epoca h2{
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.seleccionado {
+    color: rgb(255, 255, 255);
+    background-color: #D92B00 !important;
+}
+
+.seleccionado2 {
+    color: rgb(255, 255, 255);
+    background-color: #D92B00 !important;
+}
+
+/*------------------------------BENTO GRID------------------------------*/
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: 152px 152px 152px 152px 24px 146px 146px 24px 146px 146px;
+    grid-template-rows: 176px 24px 168px;
+    grid-template-areas: 
+    "artista1 artista1 artista1 artista1 . artista2 artista2 . artista4 artista4"
+    "artista1 artista1 artista1 artista1 .        . .        . artista4 artista4"
+    "artista1 artista1 artista1 artista1 . artista3 artista3 . artista4 artista4";
+    margin-top: 30px;
+    margin-left: 332px;
+}
+
+#artista1 {
+    grid-area: artista1;
+}
+
+#artista2 {
+    grid-area: artista2;
+}
+
+#artista3 {
+    grid-area: artista3;
+    align-content: end;
+}
+
+#artista4 {
+    grid-area: artista4;
+}
+
+.bento-grid-item {
+    position: relative;
+}
+
+.degrade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,1)); /* Ajusta el degradado según tus necesidades */
+    z-index: 2; /* Asegura que el overlay esté siempre por encima de la imagen */
+    pointer-events: none; /* Esto asegura que el overlay no interfiera con el hover en la imagen */
+  }
+
+.bento-grid-img {
+    display: block;
+    transition: 0.5s all ease-in-out;
+    z-index: 1;
+}
+
+.bento-grid-txt {
+    position: absolute;
+    color: white;
+    margin: 0;
+}
+
+.nombreart-bento {
+    font-family: bebas;
+    margin-left: 10px;
+    top: -5%;
+    background-color: #D92B00;
+    font-size: 1.5em;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+}
+
+.titulo-bento {
+    width: 80%;
+    bottom: 0;
+    padding-right: 3%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    position: absolute;
+    font-family: bebas;
+    color: white;
+    padding-left: 20px;
+    top: 85%;
+    transition: 0.6s;
+    font-size: 1.5em;
+    z-index: 3;
+}
+
+.titulo-bento2 {
+    top: 80%;
+}
+
+.titulo-bento3 {
+    top: 65%;
+}
+
+.titulo-bento4 {
+    top: 83%;
+}
+
+.titulo-chiquito {
+    font-size: 1.25em;
+}
+
+.parrafo-bento {
+    font-size: 0.85em;
+}
+
+.texto {
+    font-family: RobotoRegular;
+    color: white;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+    z-index: 3;
+}
+
+.texto p {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+}
+
+.texto:hover{
+    opacity: 1;
+}
+
+.texto > * {
+    transform: translateY(25px);
+    transition: transform 0.6s;
+}
+
+.texto:hover > * {
+    transform: translateY(0px);
+}
+
+.contenido:hover .titulo-bento {
+    top: 70%;
+}
+
+.contenido:hover .titulo-bento2 {
+    top: 40%;
+}
+
+.contenido:hover .titulo-bento3 {
+    top: 22%;
+}
+
+.contenido:hover .titulo-bento4 {
+    top: 62%;
+}
+
+.contenido {
+    overflow: hidden;
+}
+
+.contenido:hover img {
+    transform: scale(1.25);
+}
+
+/*------------------------------MAS NOTICIAS------------------------------*/
+
+.mas-noticias {
+    margin-top: 15px;
+    margin-left: 1405px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: end;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    width: 150px;
+}
+
+.mas-noticias h3 {
+    font-family: bebas;
+    color: white;
+    margin: 10px 0 10px 0;
+}
+
+.mas-noticias img{
+    width: 23px;
+    height: 16px;
+    align-self: center;
+    padding-left: 15px;
+}
+
+/*------------------------------TOP------------------------------*/
+
+.top {
+    margin-left: 332px;
+    margin-top: 50px;
+    width: 1240px;
+    height: 1000px;
+}
+
+.top h1 {
+    font-family: bebas;
+    color: white;
+    font-size: 3em;
+    margin-bottom: 10px;
+    margin-right: 30px;
+}
+
+.top h2 {
+    font-family: bebas;
+    color: white;
+    font-size: 2em;
+    margin: 0;
+}
+
+#quizas {
+    margin-bottom: 25px;
+}
+
+.contenedor {
+    background-color: #191919;
+}
+
+.topybotones {
+    margin-left: 50px;
+    padding-top: 50px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.botonesdes {
+    display: flex;
+}
+
+.contenedor-top {
+    width: 1240px;
+    height: 775px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.contenedor-top h3 {
+    font-family: bebas;
+    color: #A0A0A0;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+#card-top-1 {
+    margin-top: 20px;
+}
+
+#card-top-6 {
+    margin-top: 20px;
+}
+
+#card-top-10 {
+    margin-left: 30px;
+}
+
+#card-top-10 h1{
+    width: 30px;
+    margin-right: 39px;
+    text-align: end;
+}
+
+.card-top {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+.card-top img {
+    width: 114px;
+    height: 114px;
+}
+
+.tituloyartista {
+    margin-left: 30px;
+    align-self: center;
+}
+
+#fuente {
+    text-align: end;
+    margin-right: 50px;
+    padding-bottom: 50px;
+    font-size: 1.50em;
+}
+
+.desplegable {
+    font-family: bebas;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    width: 125px;
+    padding: 10px 0 10px 0;
+    margin-left: 25px;
+}
+
+.desplegable h3 {
+    margin: 0;
+}
+
+.desplegable img {
+    width: 23px;
+    height: 16px;
+    align-self: center;
+    transform: rotate(90deg);
+}
+
+.desplegables {
+    display: flex;
+    margin-left: 345px;
+    user-select: none;
+    width: 380px;
+    position: relative;
+    font-family: bebas;
+    color: white;
+    font-size: 20px;
+}
+
+.container {
+    margin-left: 25px;
+    position: absolute;
+    background-color: #191919;
+}
+
+.container2 {
+    margin-left: 200px;
+    position: absolute;
+    background-color: #191919;
+}
+
+.select-btn {
+    width: 150px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0 10px 0;
+}
+
+.select-btn img{
+    width: 23px;
+    height: 16px;
+    transform: rotate(90deg);
+    align-self: center;
+}
+
+.select-btn.open ~ .list-items {
+    display: block;
+}
+
+.select-btn.open img{
+    transform: rotate(270deg);
+}
+
+.list-items {
+    width: 150px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.list-items p {
+    width: 120px;
+    margin: 0;
+    padding: 0 0 0 10px;
+}
+
+.item {
+    padding: 10px 0 10px 10px;
+}
+
+.item :hover{
+    text-decoration: underline;
+}
+
+hr {
+    width: 130px;
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+
+/*------------------------------FOOTER------------------------------*/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    align-content: center;
+    justify-content: center;
+}
+
+.footer-grid {
+    width: 1240px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 60px 50px 50px 50px;
+    grid-template-areas: 
+    "explorar legal redes"
+    "home privacidad facebook"
+    "sobre terminos youtube"
+    ". . instagram";
+    font-size: 1.5em;
+}
+
+.footer-grid h2{
+    font-family: bebas;
+    font-size: 1em;
+    color: white;
+}
+
+#texto1 {
+    grid-area: explorar;
+}
+
+#texto2 {
+    grid-area: home;
+    color: #A1A19F;
+}
+
+#texto3 {
+    grid-area: sobre;
+    color: #A1A19F;
+}
+
+#texto4 {
+    grid-area: legal;
+    margin-left: 50%;
+}
+
+#texto5 {
+    grid-area: privacidad;
+    margin-left: 50%;
+    color: #A1A19F;
+}
+
+#texto6 {
+    grid-area: terminos;
+    margin-left: 50%;
+    color: #A1A19F;
+}
+
+#texto7 {
+    grid-area: redes;
+    text-align: end;
+}
+
+#texto8 {
+    grid-area: facebook;
+    text-align: end;
+    color: #A1A19F;
+}
+
+#texto9 {
+    grid-area: youtube;
+    text-align: end;
+    color: #A1A19F;
+}
+
+#texto10 {
+    grid-area: instagram;
+    text-align: end;
+    color: #A1A19F;
+}
+
+.terminos {
+    margin-top: 75px;
+    margin-bottom: 25px;
+    font-family: RobotoRegular;
+    color: #A1A19F;
+    font-size: 0.80em;
+    text-align: center;
+}
