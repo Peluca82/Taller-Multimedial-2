@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "Metrophobic";
+    src: url("Fuentes/Metrophobic-Regular.ttf");
+    font-weight: normal;
+}
+
+body {
+    background-color: #090909;
+    margin: 0;
+    background-image: url(Imagenes/Fondos/fondoProceso.png);  
+    background-repeat: no-repeat;
+}
+
+.titulo {
+    height: 118px;
+}
+
+.titulo img {
+    width: 600px;
+    margin-top: 30px;
+}
+
+.contenedor {
+    display: flex;
+}
+
+.pasos {
+    width: 55%;
+    height: 873px;
+    overflow: auto;
+}
+
+.pasos::-webkit-scrollbar {
+    display: none;
+}
+
+.guitarra {
+    width: 90%;
+} 
+
+.vinilo {
+    margin-top: 100px;
+}

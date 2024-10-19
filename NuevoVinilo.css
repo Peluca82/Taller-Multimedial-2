@@ -1,0 +1,93 @@
+.vinilo {
+    position: relative;
+}
+
+.nucleos {
+    display: flex;
+    position: absolute;
+}
+
+#nucleo-1 {
+    position: absolute;
+    top: 490px;
+    left: 41px;
+}
+
+#nucleo-2 {
+    position: absolute;
+    top: 480px;
+    left: 62px;
+}
+
+#nucleo-3 {
+    position: absolute;
+    top: 480px;
+    left: 83px;
+}
+
+#nucleo-4 {
+    position: absolute;
+    top: 490px;
+    left: 104px;
+}
+
+.brazo {
+    position: absolute;
+    top: 20px;
+    left: 175px;
+}
+
+.disco {
+    position: absolute;
+    top: 15px;
+    left: 40px;
+}
+
+.slidecontainer {
+    margin-left: 100px;
+    position: absolute;
+    left: 541px;
+    top: 358px;
+    transform: rotate(180deg);
+}
+
+.drag__bar {
+    width: 5px;
+    height: 235px;
+    appearance: none;
+    -webkit-appearance: none;
+    background: #00000000;
+    border-radius: 10px;
+    outline: none;
+}
+  
+.drag__bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    background: url(Imagenes/Vinilo/volumen.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+}
+
+input[type="range"] {
+    writing-mode: vertical-lr;
+}
+
+#girar {
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin{
+    100%{-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin{
+    100%{-webkit-transform: rotate(360deg);}
+}
+@keyframes spin{
+    100%{-webkit-transform: rotate(360deg);}
+}

@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "Metrophobic";
+    src: url("Fuentes/Metrophobic-Regular.ttf");
+    font-weight: normal;
+}
+
+body {
+    background-color: #000000;
+    background-image: url(Imagenes/Fondos/fondoOpiniones.png);  
+    margin: 0;
+    background-repeat: no-repeat;
+}
+
+.opinionesArtistasF img{
+    margin-top: 30px;
+    width: 600px;
+}
+
+.contenedorTotal{
+    display: flex;
+    flex-direction: row;
+}
+
+.vinilo {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.tocaDiscos{
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 130px;
+}
+.opiniones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+.opinion1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+}
+.opinion2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+.opinion3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    margin-top: 20px;
+}
+p{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 16px;
+    font-family: "Metrophobic";
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+.texto{
+    background: linear-gradient(to right, transparent, 12%, rgb(255, 255, 255),  rgb(255, 255, 255), rgb(255, 255, 255));
+    height: 180px;
+    width: 870px;
+    padding-left: 150px;
+    padding-right: 50px;
+    padding-top: 20px;
+    margin-left: 90px;
+}
+.img{
+    position: absolute;
+    margin-right: 750px;
+}
+hr{
+    width: 700px;
+    margin: 0;
+    background-color: #000000;
+}
+h2{
+    font-size: 20px;
+    text-align: center;
+    font-family: "Metrophobic";
+    margin-top: 0;
+}
+.puntitos{
+    margin-left: 500px;
+    margin-top: 30px;
+}
+
+.claves{
+    position: absolute;
+    margin-top: 20px;
+    margin-right: 430px;
+}
+.notaMusical{
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 900px;
+}
+a{
+    cursor: pointer;
+}

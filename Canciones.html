@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Imagenes/favicon.ico">
+    <link rel="stylesheet" href="stylesCanciones.css">
+    <link rel="stylesheet" href="NuevoVinilo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>LOST TAPES OF THE 27 CLUB</title>
+</head>
+
+<body>
+    <div class="contenedorTodo">
+        <div class="izquierda">
+            <div id="titulo">
+                <img src="Imagenes/Titulos/Nucleo1.png" alt="">
+            </div>
+            <div id="vinilo" class="vinilo">
+                <div class="disco">
+                    <img src="Imagenes/Vinilo/vinilo.png" alt="" id="girar">
+                </div>
+                <div class="nucleos">
+                    <div id="nucleo-1">
+                        <a href="index.html">
+                            <img src="Imagenes/Vinilo/Punto.png" alt="">
+                        </a>
+                    </div>
+                    <div id="nucleo-2">
+                        <a href="Proceso.html">
+                            <img src="Imagenes/Vinilo/Punto.png" alt="">
+                        </a>
+                    </div>
+                    <div id="nucleo-3">
+                        <a href="Canciones.html">
+                            <img src="Imagenes/Vinilo/Punto.png" alt="">
+                        </a>
+                    </div>
+                    <div id="nucleo-4">
+                        <a href="Opiniones.html">
+                            <img src="Imagenes/Vinilo/Punto.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="volumen">
+                    <div class="slidecontainer">
+                        <input type="range" min="0" max="100" value="50" class="drag__bar" id="myRange">
+                    </div>
+                </div>
+                <div class="brazo">
+                    <img src="Imagenes/Vinilo/Brazo3.png" alt="">
+                </div>
+                <div class="tocadiscos">
+                    <img src="Imagenes/Vinilo/TocaDiscos3.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="derecha">
+            <div id="canciones" class="canciones">
+                <div id="cancion1" class="cancion">
+                    <div class="contenedorCancion">
+                        <div class="viniloOG">
+                            <img id="viniloKurt" src="Imagenes/Vinilo/ViniloOriginal.png" alt="">
+                        </div>
+                        <div class="caja">
+                            <img src="Imagenes/Vinilo/Kurt.png" alt="">
+                        </div>
+                        <div class="texto">
+                            <p class="autor">Kurt Cobain</p>
+                            <p class="cancionn">Drowned in the Sun</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="cancion2" class="cancion">
+                    <div class="contenedorCancion">
+                        <div class="viniloOG">
+                            <img id="viniloJim" src="Imagenes/Vinilo/ViniloOriginal.png" alt="">
+                        </div>
+                        <div class="caja">
+                            <img src="Imagenes/Vinilo/Jim.png" alt="">
+                        </div>
+                        <div class="texto">
+                            <p class="autor">Jim Morrison</p>
+                            <p class="cancionn">The Roads are Alive</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="cancion3" class="cancion">
+                    <div class="contenedorCancion">
+                        <div class="viniloOG">
+                            <img id="viniloJimi" src="Imagenes/Vinilo/ViniloOriginal.png" alt="">
+                        </div>
+                        <div class="caja">
+                            <img src="Imagenes/Vinilo/Jimi.png" alt="">
+                        </div>
+                        <div class="texto">
+                            <p class="autor">Jimi Hendrix</p>
+                            <p class="cancionn">You´re Gonna Kill Me</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="cancion4" class="cancion">
+                    <div class="contenedorCancion">
+                        <div class="viniloOG">
+                            <img id="viniloAmy" src="Imagenes/Vinilo/ViniloOriginal.png" alt="">
+                        </div>
+                        <div class="caja">
+                            <img src="Imagenes/Vinilo/Amy.png" alt="">
+                        </div>
+                        <div class="texto">
+                            <p class="autor">Amy Winehouse</p>
+                            <p class="cancionn">Man, i Know</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="grafico">
+                <div class="imagen">
+                    <img src="imagenes/Otros/grafico.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="audio"></audio>
+    <source src="Back In Black.mp3">
+    </audio>
+
+    <div class="audio-player">
+        <div class="info">
+            <div class="conteinerInfo">
+                <div id="cancionInfo">
+                    <h2 id="tituloR">-</h2>
+                    <h3 id="artistaR">-</h3>
+                </div>
+                <div id="controles" class="controls">
+                    <div class="controls_plays">
+
+                        <svg id="prev_btn" viewBox="0 0 24.5 23.6">
+                            <polygon points="0,11.8 13.5,0 13.5,10.7 24.5,0 24.5,23.6 13.5,12.9 13.5,23.6 " />
+                        </svg>
+
+                        <svg id="plays_btn" viewBox="0 0 24.5 30.9">
+                            <g id="play_btn">
+                                <path d="M0,30.9L0,0l24.5,15.4L0,30.9z" />
+                            </g>
+                            <g id="pause_btn">
+                                <rect x="0" y="0" width="8.2" height="30.9" />
+                                <rect x="16.2" y="0" width="8.2" height="30.9" />
+                            </g>
+                        </svg>
+
+                        <svg id="next_btn" viewBox="0 0 24.5 23.6">
+                            <polygon points="25,11.8 11.5,0 11.5,10.7 0.5,0 0.5,23.6 11.5,12.9 11.5,23.6 " />
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
+            <div class="progressbar_slide">
+                <div class="progressbar_range"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container-modal oculto" id="feedback">
+        <div id="fondo"></div>
+        <div class="content-modal">
+            <div class="nombrefuente">
+                <p id="autor">Kurt Cobain</p>
+            </div>
+            <div class="viniloyfondo">
+                <div class="cancion2">
+                    <div class="contenedorCancion2">
+                        <div class="viniloOG2">
+                            <img src="Imagenes/Vinilo/ViniloOriginal.png" alt="">
+                        </div>
+                        <div class="caja2">
+                            <img id="imagenCaja" src="Imagenes/Vinilo/Kurt.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="blanco">
+                    <p id="contenido">La canción que se está reproduciendo fue creada por “Over The Bridge”, una
+                        organización que
+                        utilizó
+                        inteligencia artificial para componer el álbum “Lost Tapes of the 27 Club”, del cuál forma parte
+                        dicha canción titulada “Drowned in the sun”. En este caso, la voz que se escucha no es real,
+                        sino
+                        que, mediante la utilización de la IA, imitan al cantante Kurt Cobain.</p>
+                    <div class="btn-cerrar" id="boton-volver">
+                        <img src="Imagenes/Otros/flecha.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-modal oculto" id="feedback2">
+        <div id="fondo2"></div>
+        <div class="content-modal">
+            <div class="nombrefuente2">
+                <p id="autor2">Kurt Cobain</p>
+                <p id="fuente2">Fuente: Wikipedia</p>
+            </div>
+            <div class="viniloyfondo">
+                <div class="cancion2">
+                    <div class="contenedorCancion2">
+                        <div class="viniloOG2">
+                            <img src="Imagenes/Vinilo/ViniloOriginal.png" alt="">
+                        </div>
+                        <div class="caja2">
+                            <img id="imagenCaja2" src="Imagenes/Vinilo/Kurt.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="blanco">
+                    <p id="contenido2">El 8 de abril de 1994, Kurt Cobain, fue encontrado muerto en su casa de Seattle,
+                        Washington. Los investigadores forenses determinaron más tarde que había muerto tres días antes,
+                        el 5 de abril. El informe del incidente indicó que el cuerpo fue encontrado con una escopeta
+                        sobre el pecho, había sufrido una herida de bala en la cabeza y que se había descubierto una
+                        nota de suicidio cerca. La policía de Seattle dictaminó que la muerte del músico fue un
+                        suicidio. Durante la mayor parte de su vida, sufrió bronquitis crónica y dolor intenso debido a
+                        una condición estomacal crónica no diagnosticada. También era propenso al alcoholismo, sufría de
+                        depresión y usaba drogas e inhalantes con regularidad.</p>
+                    <div class="btn-cerrar2" id="boton-volver2">
+                        <img src="Imagenes/Otros/flecha.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

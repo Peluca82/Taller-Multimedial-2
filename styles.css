@@ -1,0 +1,117 @@
+/* @font-face {
+    font-family: "Metrophobic";
+    src: url("Fuentes/Metrophobic-Regular.ttf");
+    font-weight: normal;
+} */
+
+@font-face {
+    font-family: "Roboto";
+    src: url("Fuentes/RobotoMono-VariableFont_wght.ttf");
+    font-weight: normal;
+}
+body {
+    background-color: #090909;
+    margin: 0;
+    background-image: url(Imagenes/Fondos/FondoInicio.png);  
+    background-repeat: no-repeat;
+}
+
+
+
+/*--------------TITULO Y SUBTITULO------------*/
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.subtitulo {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.subtitulo img {
+    width: 50%;
+}
+
+/*--------------INFO------------*/
+
+.info {
+    font-family: "Roboto";
+    color: white;
+    margin-top: 100px;
+}
+
+.proyecto {
+    display: grid;
+    grid-template-columns: 10% 80%;
+    grid-row: 100%;
+    grid-template-areas: "logo1 texto1";
+    justify-content: center;
+    align-items: center;
+}
+
+#IA {
+    grid-area: logo1;
+    justify-self: center;
+    cursor: pointer;
+}
+
+#IAT {
+    grid-area: texto1;
+    width: 790px;
+}
+
+.proyecto img {
+    width: 182px;
+    height: 126px;
+}
+
+.proyecto p {
+    font-size: 36px;
+    padding-left: 70px;
+}
+
+.intencion {
+    display: grid;
+    grid-template-columns: 80% 10%;
+    grid-row: 100%;
+    grid-template-areas: "texto2 logo2";
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.intencion img {
+    width: 220px;
+    height: 179px;
+}
+
+.intencion p {
+    font-size: 36px;
+    padding-right: 70px;
+}
+
+#CEREBRO {
+    grid-area: logo2;
+    justify-self: center;
+    cursor: pointer;
+}
+
+#CEREBROT {
+    grid-area: texto2;
+    justify-self: end;
+    width: 840px;
+}
+
+
+
+/*--------------VINILO------------*/
+
+.vinilo {
+    margin-left: 32%;
+    margin-top: 160px;
+    margin-bottom: 125px;
+}
