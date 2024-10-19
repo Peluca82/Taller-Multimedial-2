@@ -1,0 +1,404 @@
+/*------------------ MOBILE ------------------*/ 
+
+@media screen and (max-width: 768px){
+
+    /*------------------ HEADER ------------------*/ 
+
+    .imagen-header img {
+        width: 150px;
+    }
+
+    #bdark {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 0.75em;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /*------------------ INICIO ------------------*/ 
+
+    .inicio {
+        display: block;
+    }
+
+    .grid-inicio {
+        margin-top: 0;
+        display: block;
+        margin-left: 0;
+    }
+
+    .grid-inicio h1 {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+        margin: 0;
+        font-size: 1.75em;
+        text-shadow:
+        -0.6px -0.6px 0 #292627,
+         0   -0.6px 0 #292627,
+         0.6px -0.6px 0 #292627,
+         0.6px  0   0 #292627,
+         0.6px  0.6px 0 #292627,
+         0    0.6px 0 #292627,
+        -0.6px  0.6px 0 #292627,
+        -0.6px  0   0 #292627;
+    }
+
+    .darkmode #titulo {
+        text-shadow:
+        -0.3px -0.3px 0 white,
+         0   -0.3px 0 white,
+         0.3px -0.3px 0 white,
+         0.3px  0   0 white,
+         0.3px  0.3px 0 white,
+         0    0.3px 0 white,
+        -0.3px  0.3px 0 white,
+        -0.3px  0   0 white;
+    }
+
+    .grid-inicio p {
+        padding-top: 20px;
+        font-size: 1em;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .imagen-inicio {
+        display: none;
+    }
+
+    .imagen-inicio-mobile {
+        display: flex;
+        justify-content: end;
+    }
+
+    .imagen-inicio-mobile img {
+        width: 275px;
+        height: 275px;
+    }
+
+    .boton-inicio {
+        padding-bottom: 60px;
+        padding-right: 0;
+        padding-top: 40px;
+        text-align: center;
+    }
+    
+    .boton-inicio a{
+        padding-left: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 50px;
+        border-radius: 20px;
+        font-size: 1em;
+    }
+
+    /*------------------ CONOCENOS ------------------*/ 
+
+    .conocenos {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .conocenos h2 {
+        font-size: 2.25em;
+    }
+
+    .conocenos p {
+        font-size: 1.1em;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /*------------------ CODIGO ------------------*/ 
+
+    .grid-codigo {
+        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .codigo {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .codigo h2{
+        font-size: 2em;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .codigo p {
+        font-size: 1.25em;
+    }
+
+    .imagen-regalo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .imagen-regalo img {
+        width: 250px;
+        height: 250px;
+    }
+
+    /*------------------ CARRUSEL ------------------*/ 
+
+    .carrusel {
+        height: 291px;
+    }
+
+    .carrusel h2 {
+        font-size: 2.25em;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .carousel-container {
+        grid-template-columns: 20px 300px 20px;
+    }
+
+    .secciones {
+        margin-top: 50px;
+        margin-bottom: 0px;
+    }
+
+    .carousel {
+        height: 300px;
+    }
+
+    .carousel-arrow {
+        justify-self: center;
+        height: 30px;
+    }
+
+    .carousel-card {
+        transition: 0ms;
+    }
+
+    .carousel-card h4 {
+        padding-top: 6%;
+        padding-bottom: 6%;
+        font-size: 0.5em;
+        line-height: 1.25em;
+        box-shadow: 10px 1px 1000px 1px rgba(0, 0, 0, 0.5);
+    }
+
+    .carousel-card-0 {
+        font-size: 0.5em;
+        display: none;
+    }
+
+      .carousel-card-1 {
+        font-size: 1em;
+        left: 20%;
+    }
+
+    .carousel-card-2 {
+        font-size: 1.5em;
+    }
+
+    .carousel-card-3 {
+        font-size: 1em;
+        left: 80%;
+    }
+
+    .carousel-card-4 {
+        font-size: 0.5em;
+        display: none;
+    }
+
+    .carousel-card-5 {
+        font-size: 0.5em;
+        display: none;
+    }
+
+    .carousel-card-6 {
+        font-size: 0.5em;
+        display: none;
+    }
+
+    /*------------------ BULLETS ------------------*/ 
+
+    .bullets {
+        display: block;
+        padding-top: 40px;
+        padding-bottom: 70px;
+    }
+
+    .bullet {
+        width: 250px;
+        padding-left: 55px;
+        padding-top: 50px;
+    }
+
+    .bullet h3 {
+        padding-top: 20px;
+        margin: 5px;
+        font-size: 1.75em;
+    }
+
+    .bullet p {
+        margin: 5px;
+        font-size: 1.25em;
+    }
+
+    /*------------------ FORMULARIO ------------------*/ 
+
+    .grid-formulario {
+        display: grid;
+        padding-left: 0px;
+        padding-top: 30px;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 100%;
+        grid-template-areas: 
+        "joystick textos";
+    }
+
+    .imagen-joystick img{
+        width: 100px;
+    }
+
+    .texto-form h2{
+        font-size: 1.25em;
+    }
+
+    .texto-form p{
+        font-size: 1em;
+    }
+
+    .campos-espacios {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .formularios {
+        padding-left: 0;
+        padding-top: 40px;
+    }
+
+    .campos-espacios {
+        font-size: 1em;
+    }
+
+    input[type="text"] {
+        width: 320px;
+        font-size: 1em;
+        height: 30px;
+        border-radius: 10px;
+    }
+    
+    input[type="email"] {
+        width: 320px;
+        font-size: 1em;
+        height: 30px;
+        border-radius: 10px;
+    }
+
+    .imagen-formulario {
+        display: none;
+    }
+
+    .select-btn {
+        height: 30px;
+        border-radius: 10px;
+        padding-right: 15px;
+    }
+
+    .select-btn .btn-text {
+        font-size: 1em;
+    }
+
+    .list-items .item {
+        height: 30px;
+        padding-left: 0px;
+        padding-right: 5px;
+    }
+
+    .item .item-text {
+        font-size: 1em;
+    }
+
+    .item .checkbox {
+        width: 10px;
+        height: 10px;
+    }
+
+    #boton-enviar {
+        padding-left: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 50px;
+        border-radius: 20px;
+        font-size: 1em;
+    }
+
+    .grid-formulario2 {
+        display: block;
+    }
+
+    .content-modal {
+        width: 95%;
+    }
+
+    .content-modal h2 {
+        width: 325px;
+        padding-left: 10px;
+        font-size: 1.30em;
+    }
+
+    .content-modal p {
+        width: 325px;
+        padding-left: 10px;
+        font-size: 0.80em;
+    }
+
+    /*------------------ FOOTER ------------------*/ 
+
+    .grid-footer {
+        padding-left: 0px;
+        font-size: 0.1in;
+        display: grid;
+        grid-template-columns: 25% 25% 10% 10% 10% 10%;
+        grid-template-rows: 30% 25% 25%;
+        justify-content: center;
+        align-content: center;
+        grid-template-areas: 
+        "text1 text4 text7 text7 text7 ."
+        "text2 text5 imagen1 imagen2 imagen3 imagen4"
+        "text3 text6 imagen1 imagen2 imagen3 imagen4";
+    }
+
+    #imagen1 {
+        width: 30px;
+    }
+
+    #imagen2 {
+        width: 30px;
+    }
+
+    #imagen3 {
+        width: 30px;
+    }
+
+    #imagen4 {
+        width: 30px;
+    }
+
+    .footer {
+        padding-top: 30px;
+    }
+
+    #copyright {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 0.75em;
+    }
+
+    hr {
+        width: 300px;
+    }
+}

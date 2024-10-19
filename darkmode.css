@@ -1,0 +1,237 @@
+/*---------------------------- DARKMODE ----------------------------*/ 
+/*------------------ HEADER ------------------*/ 
+
+.darkmode header{
+    background-color: #292929;
+}
+
+.darkmode #bdark{
+    color: black;
+    background-color: rgb(227, 227, 227);
+}
+
+.darkmode #bdark:hover {
+    background-color: rgb(173, 173, 173);
+}
+
+.darkmode #imagen-header-mobile {
+    display: none;
+}
+
+.darkmode #imagen-header-mobile-negativo {
+    display: block;
+}
+
+/*------------------ INICIO ------------------*/ 
+
+.darkmode .inicio {
+    background-color: #292929;
+}
+
+.darkmode .boton-inicio a{
+    background-color: #00B0E8;
+    color: black;
+}
+
+.darkmode .grid-inicio h1 {
+    color: #292627;
+    text-shadow:
+    -1.25px -1.25px 0 white,
+     0   -1.25px 0 white,
+     1.25px -1.25px 0 white,
+     1.25px  0   0 white,
+     1.25px  1.25px 0 white,
+     0    1.25px 0 white,
+    -1.25px  1.25px 0 white,
+    -1.25px  0   0 white;
+}
+
+.darkmode .boton-inicio :hover {
+    background-color: #00c3ff;
+}
+
+.darkmode .grid-inicio p {
+    color: white;
+}
+
+.darkmode span {
+    color: white;
+}
+
+/*------------------ CONOCENOS ------------------*/ 
+
+.darkmode .conocenos {
+    background-color: #004C6C;
+}
+
+.darkmode .conocenos h2{
+    color: white;
+}
+
+.darkmode .conocenos p{
+    color: white;
+}
+
+/*------------------ CODIGO ------------------*/ 
+
+.darkmode .codigo {
+    background-color: #006590;
+}
+
+.darkmode .codigo h2{
+    color: white;
+}
+
+.darkmode .codigo p{
+    color: white;
+}
+
+/*------------------ CARRUSEL ------------------*/ 
+
+.darkmode .carrusel {
+    background-color: #0081B8;
+}
+
+.darkmode .carrusel h2{
+    color: white;
+}
+
+.darkmode .carrusel p{
+    color: white;
+}
+
+.darkmode #left-arrow {
+    filter: invert(0%) sepia(0%) saturate(1%) hue-rotate(14deg) brightness(104%) contrast(101%);
+}
+
+.darkmode #right-arrow {
+    filter: invert(0%) sepia(0%) saturate(1%) hue-rotate(14deg) brightness(104%) contrast(101%);
+}
+
+/*------------------ BULLETS ------------------*/ 
+
+.darkmode .bullets {
+    background-color: #0096D6;
+}
+
+.darkmode .bullet {
+    text-align: center;
+}
+
+.darkmode #signodos {
+    display: inline;
+}
+
+.darkmode #relojdos {
+    display: inline;
+}
+
+.darkmode #papeldos {
+    display: inline;
+}
+
+.darkmode #signo {
+    display: none;
+}
+
+.darkmode #reloj {
+    display: none;
+}
+
+.darkmode #papel {
+    display: none;
+}
+
+.darkmode .bullets h3{
+    color: white;
+}
+
+.darkmode .bullets p{
+    color: white;
+}
+
+/*------------------ FORMULARIO ------------------*/ 
+
+.darkmode .formulario {
+    background-color: #292929;
+}
+
+.darkmode #joystick-img {
+    display: none;
+}
+
+.darkmode #joystick-img-d {
+    display: inline;
+}
+
+.darkmode .textos-refe {
+    color: #B1B1B1;
+}
+
+.darkmode input[type="text"] {
+    color: #B1B1B1;
+    background-color: #1A1818;
+}
+
+.darkmode input[type="email"] {
+    color: #B1B1B1;
+    background-color: #1A1818;
+}
+
+.darkmode #boton-enviar {
+    background-color: #00B0E8;
+    color: black;
+}
+
+.darkmode .texto-form h2{
+    color: #34B0E5;
+}
+
+.darkmode .texto-form p{
+    color: white;
+}
+
+.darkmode #boton-enviar:hover {
+    background-color: #00c3ff;
+}
+
+.darkmode .select-btn {
+    background-color: #1A1818;
+}
+
+.darkmode .select-btn .arrow-dwn {
+        background: #1A1818;
+}
+
+.darkmode .list-items {
+    background-color: #1A1818;
+}
+
+.darkmode .list-items .item:hover{
+    background-color: #141313;
+}
+
+.darkmode .select-btn .arrow-dwn {
+    color: #B1B1B1;
+}
+
+.darkmode .content-modal {
+    background-color: #292929;
+}
+
+.darkmode .content-modal h2 {
+    color: #00B0E8;
+}
+
+.darkmode .feedback p {
+    color: white;
+}
+
+.darkmode #nickname-placeholder {
+    color: #00B0E8;
+}
+
+.darkmode input:-webkit-autofill,input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active{
+    -webkit-text-fill-color: #B1B1B1;
+    transition: background-color 5000s ease-in-out 0s;
+}
